@@ -1,12 +1,14 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import * as React from 'react';
+// link is a prebuilt component maintained by gatsby
+import { Link } from 'gatsby';
 import {
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText
-} from './layout.module.css'
+} from './layout.module.css';
+// import { FaLinkedin } from 'react-icons/fa';
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -23,6 +25,10 @@ const Layout = ({ pageTitle, children }) => {
               About
             </Link>
           </li>
+          {/* <li>
+            <a><FaLinkedin />
+            </a>
+          </li> */}
         </ul>
       </nav>
       <main>
