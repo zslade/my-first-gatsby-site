@@ -1,11 +1,14 @@
 .container {
-    margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+    margin: 50px auto 50px;
+    max-width: 650px;
+    font-family: 'BlinkMacSystemFont', sans-serif;
+    line-height: 1.5;
   }
   
   .heading {
-    color: rebeccapurple;
+    margin-top: 50px;
+    color: #d62728;
+    font-size: 48px;
   }
   .nav-links {
     display: flex;
@@ -13,8 +16,13 @@
     padding-left: 0;
   }
   .nav-link-item {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   .nav-link-text {
     color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nav-link-text:hover {
+    text-decoration: underline;
   }
