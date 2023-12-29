@@ -3,12 +3,14 @@
     max-width: 650px;
     font-family: 'BlinkMacSystemFont', sans-serif;
     line-height: 1.5;
+    color: #626262;
   }
   
   .heading {
     margin-top: 50px;
-    color: #d62728;
     font-size: 48px;
+    color:#1d1d1d;
+
   }
   .nav-links {
     display: flex;
@@ -19,7 +21,7 @@
     padding-right: 1rem;
   }
   .nav-link-text {
-    color: black;
+    color:#1d1d1d;
     font-weight: bold;
     text-decoration: none;
   }

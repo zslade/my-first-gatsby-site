@@ -8,7 +8,6 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css';
-// import { FaLinkedin } from 'react-icons/fa';
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -25,10 +24,6 @@ const Layout = ({ pageTitle, children }) => {
               About
             </Link>
           </li>
-          {/* <li>
-            <a><FaLinkedin />
-            </a>
-          </li> */}
         </ul>
       </nav>
       <main>
