@@ -1,31 +1,14 @@
 import * as React from 'react';
-// link is a prebuilt component maintained by gatsby
-import { Link } from 'gatsby';
 import {
   container,
   heading,
-  navLinks,
-  navLinkItem,
-  navLinkText
-} from './layout.module.css';
+} from '../css/layout.module.css';
+import Navigation from './navigation';
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navigation />
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
