@@ -17,11 +17,10 @@ const Graph = ({ nodes, links }) => {
     // const centerX = width / 2;
     // const centerY = height / 2;
 
-
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height)
-      .attr("viewBox", [-width / 2, 100, width, height]); 
+      .attr("viewBox", [-width / 2, -height/2, width, height]); 
 
     const link = svg.append("g")
       .selectAll("line")
@@ -46,22 +45,22 @@ const Graph = ({ nodes, links }) => {
     const text = svg.append("g")
       .selectAll("text")
       .data(nodes)
-      .enter().append("text")
+      .enter()
+      .append("a")
+      .attr("href", d => d.url)
+      .append("text")
       .text(d => d.name)
       .style("font-family", "Arial, sans-serif")
       .style("font-size", "18px")
       .style("font-weight", "bold")
       .style("fill", "#1d1d1d")
-      .on("click", function (d) {
-          // Use the Link component for internal links
-          if (d.url.startsWith('/')) {
-            return <Link to={d.url} />;
-          } else {
-            // For external links, open in a new window
-            window.open(d.url, "_blank");
-          }
-      })
-      .style("cursor", "pointer");
+      .style("cursor", "pointer")
+      .each(function(d) {
+        console.log("Name", d.name);
+        console.log("Clicked node:", d.id);
+        console.log("name", d.name);
+        console.log("URL:", d.url);
+      });
 
     const simulation = d3.forceSimulation()
       .force('charge', d3.forceManyBody().strength(-40))
