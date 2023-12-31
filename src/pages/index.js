@@ -1,17 +1,21 @@
 // to enable JSX in .js file
 import * as React from 'react'
-import Layout from '../components/layout'
+import { container } from '../css/layout.module.css';
+import Navigation from '../components/navigation';
 import Graph from '../components/graph';
 import { nodes, links } from '../components/data';
 
 // function that returns a JSX element
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <div>
-        <Graph nodes={nodes} links={links} />
+        <div>
+          <div className={container}>
+          <Navigation />
+          </div>
+          <div style={{border: '2px solid #000', height: '800px', textAlign: 'center'}}>
+            <Graph nodes={nodes} links={links} />
+          </div>
       </div>
-    </Layout>
   )
 }
 
