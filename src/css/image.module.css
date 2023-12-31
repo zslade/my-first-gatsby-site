@@ -1,0 +1,5 @@
+
+.rescaled-image {
+    max-width: 300px;
+    height: auto; /* This ensures the image maintains its aspect ratio */
+  }

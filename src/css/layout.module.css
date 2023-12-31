@@ -1,0 +1,13 @@
+.container {
+    margin: 50px auto 50px auto; /*top right bottom left*/
+    max-width: 650px;
+    font-family: 'BlinkMacSystemFont', sans-serif;
+    line-height: 1.5;
+    color: #626262;
+  }
+  
+  .heading {
+    margin-top: 50px;
+    font-size: 48px;
+    color:#1d1d1d;
+  }
