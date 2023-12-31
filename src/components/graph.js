@@ -1,19 +1,27 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
+import { Link } from 'gatsby';
 
 const Graph = ({ nodes, links }) => {
   const svgRef = useRef();
 
   useEffect(() => {
-    const width = 500;
-    const height = 500;
-
+    
+    // colours for nodes
     const color = d3.scaleOrdinal(["#d62728", "#1f77b4", "#e377c2", "#2ca02c", "#ff7f0e", "#7f7f7f"]);
+
+    const width = '800px';
+    const height = '500px';
+
+    // Calculate the center point
+    // const centerX = width / 2;
+    // const centerY = height / 2;
+
 
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height)
-      .attr("viewBox", [-width / 2, -height / 2, width, height]);
+      .attr("viewBox", [-width / 2, 100, width, height]); 
 
     const link = svg.append("g")
       .selectAll("line")
@@ -45,7 +53,13 @@ const Graph = ({ nodes, links }) => {
       .style("font-weight", "bold")
       .style("fill", "#1d1d1d")
       .on("click", function (d) {
-        window.open(d.url, "_blank");
+          // Use the Link component for internal links
+          if (d.url.startsWith('/')) {
+            return <Link to={d.url} />;
+          } else {
+            // For external links, open in a new window
+            window.open(d.url, "_blank");
+          }
       })
       .style("cursor", "pointer");
 
