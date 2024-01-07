@@ -7,15 +7,8 @@ const Graph = ({ nodes, links }) => {
 
   useEffect(() => {
     
-    // colours for nodes
-    const color = d3.scaleOrdinal(["#d62728", "#1f77b4", "#e377c2", "#2ca02c", "#ff7f0e", "#7f7f7f"]);
-
-    const width = '800px';
-    const height = '500px';
-
-    // Calculate the center point
-    // const centerX = width / 2;
-    // const centerY = height / 2;
+    const width = '650';
+    const height = '650';
 
     const svg = d3.select(svgRef.current)
       .attr("width", width)
@@ -28,6 +21,9 @@ const Graph = ({ nodes, links }) => {
       .enter().append("line")
       .style("stroke", "#C0C0C0")
       .style("stroke-width", 3);
+
+    // colours for nodes
+    const color = d3.scaleOrdinal(["#d62728", "#1f77b4", "#e377c2", "#2ca02c", "#ff7f0e", "#7f7f7f"]);
 
     const node = svg.append("g")
       .selectAll("circle")
@@ -50,8 +46,7 @@ const Graph = ({ nodes, links }) => {
       .attr("href", d => d.url)
       .append("text")
       .text(d => d.name)
-      .style("font-family", "Arial, sans-serif")
-      .style("font-size", "18px")
+      .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
       .style("font-weight", "bold")
       .style("fill", "#1d1d1d")
       .style("cursor", "pointer")
@@ -82,7 +77,7 @@ const Graph = ({ nodes, links }) => {
     }
 
     function dragstarted(event, d) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
+      if (!event.active) simulation.alphaTarget(0.1).restart();
       d.fx = d.x;
       d.fy = d.y;
     }
