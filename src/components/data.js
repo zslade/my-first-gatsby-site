@@ -1,11 +1,11 @@
 // Nodes data
 export const nodes = [
-    { id: 1, name: "Art", url: "https://www.google.co.uk", category: "art" },
-    { id: 2, name: "CompSci", url: "https://www.google.co.uk", category: "compsci" },
-    { id: 3, name: "Maths", url: "https://www.google.co.uk", category: "maths" },
-    { id: 4, name: "Nature", url: "/mondrian", category: "nature"},
-    { id: 5, name: "Other", url: "https://www.google.co.uk", category: "other" },
-    { id: 6, name: "WIP", url: "https://www.google.co.uk", category: "draft" },
+    { id: 1, name: "Art", url: "/mondrian", category: "art" },
+    { id: 2, name: "CompSci", url: "", category: "compsci" },
+    { id: 3, name: "Maths", url: "", category: "maths" },
+    { id: 4, name: "Nature", url: "", category: "nature"},
+    { id: 5, name: "Other", url: "", category: "other" },
+    { id: 6, name: "WIP", url: "", category: "draft" },
   ]
   
 //Links data
