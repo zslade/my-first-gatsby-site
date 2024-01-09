@@ -16,8 +16,8 @@ const MondrianPage = () => {
         <br></br>
       <p>
         Pictured above is the painting 'Composition in Red, Yellow and Blue' by Dutch artist Piet Mondrian. 
-        To understand this painting we first have to know a bit about De Stijl, the avant-garde movement of art, architecture and design which arose in Holland in 1917. 
-        The creator of this work, Piet Mondrian, is probably the best-known of the movement’s founding fathers.
+        In order to understand the simple form of this painting and why it became a revered work of art, 
+        we first have to know a bit about De Stijl, the avant-garde movement of art, architecture and design which arose in Holland in 1917.
       </p>
       <p>
         De Stijl (Dutch for “The Style”) formed a set of principles that guided artistic creation. 
@@ -49,12 +49,12 @@ const MondrianPage = () => {
       </p>
       <p>
         Even though I enjoy the ideas behind this painting, I also like it from a purely aesthetic point of view. 
-        The bright primary colours and simple shapes remind me of childhood and evoke a sense of cheer and play. 
+        The bright primary colours and simple shapes remind me of childhood and evoke a sense of play. 
         But I also find calm in how the larger expanses of white perfectly balance the intensity of the colourful blocks 
-        and comfort in the predictable pattern of the black lines***. Mondrian himself spoke of De Stijl as “A utopian perception of spiritual harmony”, and who doesn’t want to experience that?
+        and comfort in the predictable pattern of the black lines. Mondrian himself spoke of De Stijl as “A utopian perception of spiritual harmony”, and who doesn’t want to experience that?
       </p>
       <p>
-        Regardless of whether you enjoy this painting or not, the movement to which it belongs has had huge influence on architecture and design. 
+        Whether you enjoy this painting or not, the movement to which it belongs has had huge influence on architecture and design. 
         At the time, the simple compositions of De Stijl represented a radical departure from the norm. Armed with their advocation of pure abstraction, 
         De Stijl artists went far beyond the confines of their traditional training and boldly propelled art into an entirely new realm. 
         In doing so, they established an iconic aesthetic which has persisted for over one hundred years and can be seen everywhere from the buildings of London 
@@ -68,9 +68,6 @@ const MondrianPage = () => {
       </p>
       <p style={{fontSize: '12px'}}>
       ** Indeed, it wouldn’t be too surprising to hear that the swathes of scientific discoveries and radical developments in scientific thinking at the beginning of the 20th century had an impact on artists at the time. For example, during this period Hilma Af Klint produced The Atom Series and Theo Van Doesburg attempted to capture the essence of four-dimensional spacetime on canvas.
-      </p>
-      <p style={{fontSize: '12px'}}>
-        *** Other works by Mondrian contain many more lines and blocks of colour which give them a much more energetic feel, Broadway Boogie Woogie 1942/43 for example.
       </p>
       </div>
     </Layout>
