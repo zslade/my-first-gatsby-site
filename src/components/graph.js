@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
-import { Link } from 'gatsby';
 
 const Graph = ({ nodes, links }) => {
   const svgRef = useRef();
@@ -58,10 +57,13 @@ const Graph = ({ nodes, links }) => {
       });
 
     const simulation = d3.forceSimulation()
-      .force('charge', d3.forceManyBody().strength(-40))
+      .force('charge', d3.forceManyBody().strength(-70))
       .force('center', d3.forceCenter())
       .force("link", d3.forceLink().id(d => d.id).distance(100))
       .on('tick', ticked);
+
+      // Increase the initial alpha value to make the simulation more active at the beginning
+      simulation.alpha(1.5).restart();
 
     function ticked() {
       link.attr("x1", d => d.source.x)
@@ -88,7 +90,7 @@ const Graph = ({ nodes, links }) => {
     }
 
     function dragended(event, d) {
-      if (!event.active) simulation.alphaTarget(0.1);
+      if (!event.active) simulation.alphaTarget(0.3);
       d.fx = null;
       d.fy = null;
     }
