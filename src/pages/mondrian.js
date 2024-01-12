@@ -6,13 +6,10 @@ import { rescaledImage } from '../css/image.module.css';
 const MondrianPage = () => {
   return (
     <Layout pageTitle="The Ultimate Abstraction">
-      <div style={{textAlign: 'center'}}>
-        <figure>
-          <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/>
-          <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
-        </figure>
-      </div>
-      <div>
+      <figure style={{textAlign: 'center'}}>
+        <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/>
+        <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
+      </figure>
         <br></br>
       <p>
         Pictured above is the painting 'Composition in Red, Yellow and Blue' by Dutch artist Piet Mondrian. 
@@ -34,7 +31,7 @@ const MondrianPage = () => {
       <p>
         This painting and the ideas behind it might seem a bit far-out (after all, it does belong to an avant-garde art movement), 
         but there are other fields which share in this quest to understand the world through abstraction. 
-        One that comes to my mind is particle physics*.
+        One in particular that comes to my mind is particle physics*.
         </p>
       <p>
         For particle physicists, the simplest building blocks of reality are the fundamental particles (electrons, photons, quarks, etc) 
@@ -61,7 +58,7 @@ const MondrianPage = () => {
         to the catwalks of Milan. A great deal of what we think of today as just ‘modernist’ is in fact rooted in this revolutionary movement known as De Stijl.
       </p>
       <p>
-      <i>You can see Composition in Red, Yellow and Blue at the Wilhelm-Hack-Museum in Germany.</i>
+      <i>You can see 'Composition in Red, Yellow and Blue' at the Wilhelm-Hack-Museum in Germany.</i>
       </p>
       <p style={{fontSize: '12px'}}>
       * Another is philosophy, in particular Plato’s Theory of Forms. Indeed, Mondrian was fascinated by theosophy, a spiritual movement grounded in ancient texts that was set on uncovering universal truths.
@@ -69,7 +66,6 @@ const MondrianPage = () => {
       <p style={{fontSize: '12px'}}>
       ** Indeed, it wouldn’t be too surprising to hear that the swathes of scientific discoveries and radical developments in scientific thinking at the beginning of the 20th century had an impact on artists at the time. For example, during this period Hilma Af Klint produced The Atom Series and Theo Van Doesburg attempted to capture the essence of four-dimensional spacetime on canvas.
       </p>
-      </div>
     </Layout>
   )
 }
