@@ -33,11 +33,11 @@ const AboutPage = () => {
       <p>
         This site is work in progress. 
         Alongside publishing new articles, I will be making improvements to the look and functionality of the website itself, 
-        such as ensuring easy navigation as the number of articles grows.
+        such as ensuring easy navigation as the number of articles grows. 🌱
       </p>
-      {/* <p>
+      <p>
         I post about my latest blog articles on <a href="https://www.linkedin.com/in/zoe-slade/" style={{color: "#626262"}}>LinkedIn</a> if you'd like to stay up to date.
-      </p> */}
+      </p>
     </Layout>
   )
 }
