@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import article_image from "../images/mondrian_painting.png"
+// import article_image from "../images/mondrian_painting.png"
 import { rescaledImage } from '../css/image.module.css';
 
 const MondrianPage = () => {
@@ -8,7 +8,7 @@ const MondrianPage = () => {
     <Layout pageTitle="The Ultimate Abstraction">
       <div style={{textAlign: 'center'}}>
         <figure>
-          <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/>
+          {/* <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/> */}
           <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
         </figure>
       </div>
