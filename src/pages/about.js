@@ -31,7 +31,7 @@ const AboutPage = () => {
         {/* Feel free to report any bugs or share ideas for improvements via GitHub issues. */}
       </p>
       <p>
-        This site is work in progress. 
+        This site is a work in progress. 
         Alongside publishing new articles, I will be making improvements to the look and functionality of the website itself, 
         such as ensuring easy navigation as the number of articles grows. 🌱
       </p>
