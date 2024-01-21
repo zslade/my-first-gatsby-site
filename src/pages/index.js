@@ -8,9 +8,12 @@ import { nodes, links } from '../components/data';
 // function that returns a JSX element
 const IndexPage = () => {
   return (
-    <div style={{}}>
+    <div>
       <div className={container} style={{marginBottom: '0px'}}>
-      <Navigation />
+        <Navigation />
+        <p>
+          Click on a title to go to the article, or just drag the nodes about for fun...
+        </p>
       </div>
       <main style={{textAlign: 'center'}}>
         <Graph nodes={nodes} links={links} />
@@ -20,7 +23,7 @@ const IndexPage = () => {
 }
 
 // gatsby Head component to apply metadata
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home</title>
 
 /* Step 3: Export your component so it
 can be used by other parts of your app. */

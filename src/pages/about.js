@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About Graph Blog">
       <p>
-        Hello and welcome to "Graph Blog", a place where I write about things I find interesting, 
+        Hello and welcome to my 'graph blog', a place where I write about things I find interesting, 
         primarily from the worlds of <b style={{color: '#1f77b4'}}>computer science</b>, <b style={{color: '#e377c2'}}>mathematics</b>, 
         and <b style={{color: '#d62728'}}>art</b>.
         The blog also serves as a personal playground where I can get creative with coding and overengineer things for fun!
@@ -27,6 +27,7 @@ const AboutPage = () => {
         I built this blog using <a href="https://www.gatsbyjs.com/" style={{color: "#626262"}}>Gatsby</a> and 
         the <a href="https://react.dev/" style={{color: "#626262"}}>React framework</a>. 
         I used <a href="https://d3js.org/" style={{color: "#626262"}}>d3.js</a> and <a href="https://observablehq.com" style={{color: "#626262"}}>Observable notebooks</a> to develop the graph on the home page.
+        The site is deployed using <a href="https://www.netlify.com/" style={{color: "#626262"}}>Netlify</a>. 
         All source code for the blog is contained in <a href="https://github.com/zslade/graph-blog" style={{color: "#626262"}}>this GitHub repo</a>.
         {/* Feel free to report any bugs or share ideas for improvements via GitHub issues. */}
       </p>

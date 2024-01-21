@@ -10,7 +10,7 @@ const MondrianPage = () => {
         <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/>
         <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
       </figure>
-        <br></br>
+      <br></br>
       <p>
         Pictured above is the painting 'Composition in Red, Yellow and Blue' by Dutch artist Piet Mondrian. 
         In order to understand the simple form of this painting and why it became a revered work of art, 
