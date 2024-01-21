@@ -5,7 +5,7 @@ export const nodes = [
     { id: 3, name: "Maths", url: "", category: "maths" },
     { id: 4, name: "Nature", url: "", category: "nature"},
     { id: 5, name: "Other", url: "", category: "other" },
-    { id: 6, name: "WIP", url: "", category: "draft" },
+    { id: 6, name: "External", url: "", category: "external" },
   ]
   
 //Links data
