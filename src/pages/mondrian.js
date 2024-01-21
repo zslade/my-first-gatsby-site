@@ -1,13 +1,23 @@
 import * as React from 'react'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/layout'
-import article_image from "./mondrian_painting.png"
-import { rescaledImage } from '../css/image.module.css';
+import { rescaledImage } from '../css/image.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const MondrianPage = () => {
   return (
     <Layout pageTitle="The Ultimate Abstraction">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="author" content="Zoe Slade" />
+        <meta name="date" content="2024-01-12" />
+      </Helmet>
       <figure style={{textAlign: 'center'}}>
-        <img src={article_image} alt="Painting by the artist Mondrian" className={rescaledImage}/>
+        <StaticImage
+          alt="Painting by the artist Mondrian"
+          src="mondrian_painting.png"
+          className={rescaledImage}
+        />
         <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
       </figure>
       <br></br>
