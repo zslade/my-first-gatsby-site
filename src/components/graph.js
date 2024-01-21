@@ -5,14 +5,23 @@ const Graph = ({ nodes, links }) => {
   const svgRef = useRef();
 
   useEffect(() => {
-    
-    const width = '650';
-    const height = '650';
 
-    const svg = d3.select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height)
-      .attr("viewBox", [-width / 2, -height/2, width, height]); 
+    const svg = d3.select(svgRef.current);
+
+    function updateSize() {
+      const width = window.innerWidth;  // Set width to the window width
+      const height = '650';
+    
+      svg.attr("width", "100%") // Set width to 100% to be flexible
+         .attr("height", "100%") // Set height to 100% to be flexible
+         .attr("viewBox", [-width / 2, -height/2, width, height]);
+    }
+    
+    // Initial call to set the SVG size based on the window dimensions
+    updateSize();
+    
+    // Attach the updateSize function to the window resize event
+    window.addEventListener("resize", updateSize);
 
     const link = svg.append("g")
       .selectAll("line")
