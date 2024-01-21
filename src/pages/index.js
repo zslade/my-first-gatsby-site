@@ -8,10 +8,14 @@ import { nodes, links } from '../components/data';
 // function that returns a JSX element
 const IndexPage = () => {
   return (
-    <div className={container}>
-        <Navigation />
-        <Graph nodes={nodes} links={links} />
+    <div style={{}}>
+      <div className={container} style={{marginBottom: '0px'}}>
+      <Navigation />
       </div>
+      <main style={{textAlign: 'center'}}>
+        <Graph nodes={nodes} links={links} />
+      </main>
+    </div>
   )
 }
 
