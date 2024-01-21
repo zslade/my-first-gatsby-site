@@ -60,6 +60,7 @@ const MondrianPage = () => {
       <p>
       <i>You can see 'Composition in Red, Yellow and Blue' at the Wilhelm-Hack-Museum in Germany.</i>
       </p>
+      <br></br>
       <p style={{fontSize: '12px'}}>
       * Another is philosophy, in particular Plato’s Theory of Forms. Indeed, Mondrian was fascinated by theosophy, a spiritual movement grounded in ancient texts that was set on uncovering universal truths.
       </p>
