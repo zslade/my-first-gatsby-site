@@ -26,7 +26,7 @@ const AboutPage = () => {
       <p>
         I built this blog using <a href="https://www.gatsbyjs.com/" style={{color: "#626262"}}>Gatsby</a> and 
         the <a href="https://react.dev/" style={{color: "#626262"}}>React framework</a>. 
-        I used <a href="https://observablehq.com" style={{color: "#626262"}}>Observable</a> to develop the graph on the home page before integrating with the Gatsby site.
+        I used <a href="https://d3js.org/" style={{color: "#626262"}}>d3.js</a> and <a href="https://observablehq.com" style={{color: "#626262"}}>Observable notebooks</a> to develop the graph on the home page.
         All source code for the blog is contained in <a href="https://github.com/zslade/graph-blog" style={{color: "#626262"}}>this GitHub repo</a>.
         {/* Feel free to report any bugs or share ideas for improvements via GitHub issues. */}
       </p>
@@ -35,9 +35,9 @@ const AboutPage = () => {
         Alongside publishing new articles, I will be making improvements to the look and functionality of the website itself, 
         such as ensuring easy navigation as the number of articles grows. 🌱
       </p>
-      <p>
+      {/* <p>
         I post about my latest blog articles on <a href="https://www.linkedin.com/in/zoe-slade/" style={{color: "#626262"}}>LinkedIn</a> if you'd like to stay up to date.
-      </p>
+      </p> */}
     </Layout>
   )
 }
