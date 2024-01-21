@@ -11,9 +11,6 @@ const IndexPage = () => {
     <div>
       <div className={container} style={{marginBottom: '0px'}}>
         <Navigation />
-        <p>
-          Click on a title to go to the article, or just drag the nodes about for fun...
-        </p>
       </div>
       <main style={{textAlign: 'center'}}>
         <Graph nodes={nodes} links={links} />
