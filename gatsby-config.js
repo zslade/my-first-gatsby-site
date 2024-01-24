@@ -10,5 +10,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-PMFEFVB5SM",
+        head: true, // Place the script in the head of the document
+        anonymize: true, // Anonymize IP addresses
+      },
+    },
   ],
 }
