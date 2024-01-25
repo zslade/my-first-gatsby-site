@@ -66,7 +66,7 @@ const Graph = ({ nodes, links }) => {
       });
 
     const simulation = d3.forceSimulation()
-      .force('charge', d3.forceManyBody().strength(-40))
+      .force('charge', d3.forceManyBody().strength(-140))
       .force('center', d3.forceCenter())
       .force("link", d3.forceLink().id(d => d.id).distance(100))
       .on('tick', ticked);
