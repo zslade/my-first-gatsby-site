@@ -57,8 +57,8 @@ const MondrianPage = () => {
       <p>
         Even though I enjoy the ideas behind this painting, I also like it from a purely aesthetic point of view. 
         The bright primary colours and simple shapes remind me of childhood and evoke a sense of play. 
-        But I also find calm in how the larger expanses of white perfectly balance the intensity of the colourful blocks 
-        and comfort in the predictable pattern of the black lines. Mondrian himself spoke of De Stijl as “A utopian perception of spiritual harmony”, and who doesn’t want to experience that?
+        But their intensity is also pleasantly balance by the larger expanses of white. 
+        Mondrian himself spoke of De Stijl as “A utopian perception of spiritual harmony”, and who doesn’t want to experience that?
       </p>
       <p>
         Whether you enjoy this painting or not, the movement to which it belongs has had huge influence on architecture and design. 
