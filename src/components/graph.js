@@ -66,7 +66,7 @@ const Graph = ({ nodes, links }) => {
 
       // Apply strikethrough to text for nodes not belonging to "art" category
       if (d.category !== "art") {
-        d3.select(this).style("text-decoration", "line-through");
+        d3.select(this).style("fill", "#C0C0C0");
       }
       });
 
