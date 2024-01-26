@@ -21,6 +21,7 @@ const MondrianPage = () => {
         <figcaption style={{fontSize: "10px"}}><i>Composition in Red, Yellow and Blue, Piet Mondrian (1928). Movement: De Stijl, Neoplasticism, Abstract, Modern.</i></figcaption>
       </figure>
       <br></br>
+      <h2 style={{color: '#a2a2a2'}}><i>"I could paint that!"</i></h2>
       <p>
         Pictured above is the painting 'Composition in Red, Yellow and Blue' by Dutch artist Piet Mondrian. 
         In order to understand the simple form of this painting and why it became a revered work of art, 
@@ -38,6 +39,7 @@ const MondrianPage = () => {
         Recombine these basic elements in various ratios and you can recreate every painting you have ever seen - 
         in this sense, Mondrian’s painting can be thought of as the deconstruction of all art ever!
       </p>
+      <h2 style={{color: '#a2a2a2'}}><i>A theory of everything</i></h2>
       <p>
         This painting and the ideas behind it might seem a bit far-out (after all, it does belong to an avant-garde art movement), 
         but there are other fields which share in this quest to understand the world through abstraction. 
@@ -54,6 +56,7 @@ const MondrianPage = () => {
         which the universe seemingly obeys**. With Mondrian’s work the logical end of the line for abstraction in art, 
         I like to think of this painting as the artistic equivalent of the physicist’s search for the Theory of Everything.
       </p>
+      <h2 style={{color: '#a2a2a2'}}><i>An iconic aesthetic</i></h2>
       <p>
         Even though I enjoy the ideas behind this painting, I also like it from a purely aesthetic point of view. 
         The bright primary colours and simple shapes remind me of childhood and evoke a sense of play. 
