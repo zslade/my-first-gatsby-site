@@ -63,7 +63,32 @@ const Graph = ({ nodes, links }) => {
         console.log("Clicked node:", d.id);
         console.log("name", d.name);
         console.log("URL:", d.url);
+
+      // Apply strikethrough to text for nodes not belonging to "art" category
+      if (d.category !== "art") {
+        d3.select(this).style("text-decoration", "line-through");
+      }
       });
+
+    // Adding the static text box
+    const textBox = svg
+      .append("rect")
+      .attr("x", -220)
+      .attr("y", -285)
+      .attr("width", 440)
+      .attr("height", 35)
+      .attr("rx", 15) // Round corners
+      .attr("ry", 15) // Round corners
+      .attr("fill", "#f5f5f5");
+
+    const textBoxText = svg
+      .append("text")
+      .text("Click on a title to go to the article, or just drag the nodes for fun")
+      .attr("x", -205) // Adjust the x-coordinate based on your preference
+      .attr("y", -263) // Adjust the y-coordinate based on your preference
+      .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
+      .style("font-size", "14px") 
+      .style("fill", "#888888");
 
     const simulation = d3.forceSimulation()
       .force('charge', d3.forceManyBody().strength(-140))
