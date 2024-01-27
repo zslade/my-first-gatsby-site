@@ -36,7 +36,7 @@ const Graph = ({ nodes, links }) => {
          .attr("viewBox", [-width / 2, -height/2, width, height]);
 
       // Flex width of textBox for mobile screen
-      const desiredWidth = Math.min(440, width - 20);
+      const desiredWidth = Math.min(440, width);
 
       // Update textBox position and dimensions
       textBox.attr('width', desiredWidth);
