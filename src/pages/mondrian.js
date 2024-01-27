@@ -78,7 +78,7 @@ const MondrianPage = () => {
       * Another is philosophy, in particular Plato’s Theory of Forms. Indeed, Mondrian was fascinated by theosophy, a spiritual movement grounded in ancient texts that was set on uncovering universal truths.
       </p>
       <p style={{fontSize: '12px'}}>
-      ** Indeed, it wouldn’t be too surprising to hear that the swathes of scientific discoveries and radical developments in scientific thinking at the beginning of the 20th century had an impact on artists at the time. For example, during this period Hilma Af Klint produced The Atom Series and Theo Van Doesburg attempted to capture the essence of four-dimensional spacetime on canvas.
+      ** It wouldn’t be too surprising to hear that the swathes of scientific discoveries and radical developments in scientific thinking at the beginning of the 20th century had an impact on artists at the time. For example, during this period Hilma Af Klint produced The Atom Series and Theo Van Doesburg attempted to capture the essence of four-dimensional spacetime on canvas.
       </p>
     </Layout>
   )
