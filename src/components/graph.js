@@ -8,13 +8,33 @@ const Graph = ({ nodes, links }) => {
 
     const svg = d3.select(svgRef.current);
 
+      // Adding the static text box
+      const textBox = svg
+        .append("rect")
+        .attr("x", -220)
+        .attr("y", 185)
+        .attr("width", 440)
+        .attr("height", 35)
+        .attr("rx", 15) // Round corners
+        .attr("ry", 15) // Round corners
+        .attr("fill", "#f5f5f5");
+
     function updateSize() {
       const width = window.innerWidth;  // Set width to the window width
-      const height = '650';
+      const height = '600';
     
       svg.attr("width", "100%") // Set width to 100% to be flexible
          .attr("height", "100%") // Set height to 100% to be flexible
          .attr("viewBox", [-width / 2, -height/2, width, height]);
+
+      // Flex width of textBox for mobile screen
+      const textBoxDefaultWidth = 440;
+      const desiredWidth = Math.min(textBoxDefaultWidth, width - 40);
+
+      // Update textBox position and dimensions
+      textBox.attr('x', -desiredWidth / 2 + 20)
+        .attr('y', height / 2 - 70)
+        .attr('width', desiredWidth);
     }
     
     // Initial call to set the SVG size based on the window dimensions
@@ -70,25 +90,14 @@ const Graph = ({ nodes, links }) => {
       }
       });
 
-    // Adding the static text box
-    const textBox = svg
-      .append("rect")
-      .attr("x", -220)
-      .attr("y", -285)
-      .attr("width", 440)
-      .attr("height", 35)
-      .attr("rx", 15) // Round corners
-      .attr("ry", 15) // Round corners
-      .attr("fill", "#f5f5f5");
-
-    const textBoxText = svg
-      .append("text")
-      .text("Click on a title to go to the article, or just drag the nodes for fun")
-      .attr("x", -205) // Adjust the x-coordinate based on your preference
-      .attr("y", -263) // Adjust the y-coordinate based on your preference
-      .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
-      .style("font-size", "14px") 
-      .style("fill", "#888888");
+    // const textBoxText = svg
+    //   .append("text")
+    //   .text("Click on a title to go to the article, or just drag the nodes for fun")
+    //   .attr("x", -205) // Adjust the x-coordinate based on your preference
+    //   .attr("y", -263) // Adjust the y-coordinate based on your preference
+    //   .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
+    //   .style("font-size", "14px") 
+    //   .style("fill", "#888888");
 
     const simulation = d3.forceSimulation()
       .force('charge', d3.forceManyBody().strength(-140))
