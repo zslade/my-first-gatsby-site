@@ -11,12 +11,17 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-PMFEFVB5SM",
-        head: true, // Place the script in the head of the document
-        anonymize: true, // Anonymize IP addresses
+        trackingIds: [
+          "GG-PMFEFVB5SM", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+          anonymize_ip: true,
+        },
       },
     },
   ],
 }
+
