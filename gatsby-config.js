@@ -14,11 +14,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "GG-PMFEFVB5SM", // Google Analytics / GA
+          "G-PMFEFVB5SM", // Google Analytics
         ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
         pluginConfig: {
           head: true,
-          anonymize_ip: true,
         },
       },
     },
