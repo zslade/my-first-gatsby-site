@@ -11,21 +11,21 @@ const Graph = ({ nodes, links }) => {
     // Adding the static text box
     const textBox = svg
       .append("rect")
-      .attr("x", -220)
+      .attr("x", -650 / 2)
       .attr("y", 190)
       .attr("height", 35)
       .attr("rx", 15) // Round corners
       .attr("ry", 15) // Round corners
       .attr("fill", "#f5f5f5");
 
-    const textBoxText = svg
-      .append("text")
-      .text("Click on a title to go to the article, or just drag the nodes for fun")
-      .attr("x", -205)
-      .attr("y", 212) 
-      .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
-      .style("font-size", "14px") 
-      .style("fill", "#888888");
+    // const textBoxText = svg
+    //   .append("text")
+    //   .text("Click on a title to go to the article, or just drag the nodes for fun")
+    //   .attr("x", -205)
+    //   .attr("y", 212) 
+    //   .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
+    //   .style("font-size", "14px") 
+    //   .style("fill", "#888888");
 
     function updateSize() {
       const width = window.innerWidth;  // Set width to the window width
@@ -39,10 +39,9 @@ const Graph = ({ nodes, links }) => {
       const desiredWidth = Math.min(440, width);
 
       // Update textBox position and dimensions
-      textBox.attr('width', desiredWidth);
+      textBox.attr('width', desiredWidth)
+      .attr('x', -desiredWidth / 2)
 
-      // Update textBoxText position for mobile screen
-      // textBoxText.attr('width', )
     }
     
     // Initial call to set the SVG size based on the window dimensions
