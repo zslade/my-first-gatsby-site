@@ -42,7 +42,9 @@ const Graph = ({ nodes, links }) => {
       textBox.attr('width', desiredWidth)
       .attr('x', -desiredWidth / 2)
 
-      textBoxText.attr('x', -(desiredWidth / 2) + 15)
+      const textPosition = Math.min(-(desiredWidth / 2) + 15, -(desiredWidth / 2));
+
+      textBoxText.attr('x', textPosition)
 
     }
     
