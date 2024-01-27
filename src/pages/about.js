@@ -19,7 +19,7 @@ const AboutPage = () => {
       </p>
       <h3>Why?</h3>
       <p>
-      I designed my blog like this because it enables me a to visually convey the connections between the things I write about.
+      I designed my blog like this because it enables me to visually convey the connections between the things I write about.
       It also makes for a cool landing page and a fun graphic for people to play with.
       </p>
       <h3>How?</h3>
