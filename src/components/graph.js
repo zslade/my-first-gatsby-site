@@ -42,9 +42,13 @@ const Graph = ({ nodes, links }) => {
       textBox.attr('width', desiredWidth)
       .attr('x', -desiredWidth / 2)
 
-      const textPosition = Math.min(-(desiredWidth / 2) + 15, -(desiredWidth / 2));
+      let textPosition = -(desiredWidth / 2) + 15;
 
-      textBoxText.attr('x', textPosition)
+      if (desiredWidth != 440) {
+         textPosition = -desiredWidth / 2;
+      }
+
+      textBoxText.attr('x', textPosition);
 
     }
     
