@@ -8,7 +8,7 @@ import { nodes, links } from '../components/data';
 // function that returns a JSX element
 const IndexPage = () => {
   return (
-    <div>
+    <div style={{margin: '0px 10px 0 10px'}}>
       <div className={container} style={{marginBottom: '0px'}}>
         <Navigation />
       </div>

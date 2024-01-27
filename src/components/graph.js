@@ -11,7 +11,6 @@ const Graph = ({ nodes, links }) => {
     // Adding the static text box
     const textBox = svg
       .append("rect")
-      // .attr("x", -650 / 2)
       .attr("y", 190)
       .attr("height", 35)
       .attr("rx", 15) // Round corners
@@ -20,8 +19,8 @@ const Graph = ({ nodes, links }) => {
 
     const textBoxText = svg
       .append("text")
+      .attr('width', '100')
       .text("Click on a title to go to the article, or just drag the nodes for fun")
-      // .attr("x", -205)
       .attr("y", 212) 
       .style("font-family", "'BlinkMacSystemFont', '-apple-system', 'Segoe UI','Roboto','Helvetica Neue','Arial','Noto Sans', sans-serif")
       .style("font-size", "14px") 
