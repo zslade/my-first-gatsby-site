@@ -14,3 +14,11 @@
   .nav-link-text:hover {
     text-decoration: underline;
   }
+  .nav-link-footer{
+    color: #545454;
+    text-decoration: none;
+
+  }
+  .nav-link-footer:hover {
+    text-decoration: underline;
+  }
