@@ -1,3 +1,8 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .nav-links {
     display: flex;
     list-style: none;
@@ -21,4 +26,12 @@
   }
   .nav-link-footer:hover {
     text-decoration: underline;
+  }
+  .nav-right {
+    display: flex;
+    align-items: flex-end; /* Aligns the image with the bottom of the text */
+  }
+  .navKey {
+    max-width: 120px;
+    margin-bottom: 20px;
   }
