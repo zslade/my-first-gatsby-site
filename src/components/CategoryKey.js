@@ -4,7 +4,7 @@ import {
   categoryKey, active, inactive
 } from '../css/categoryKey.module.css';
 
-const CategoryKey = ({ currentCategory }) => {
+const CategoryKey = ({ currentCategory= '' }) => {
   const categories = ['Technology', 'Maths', 'Art', 'Nature', 'Other', 'External'];
 
   return (

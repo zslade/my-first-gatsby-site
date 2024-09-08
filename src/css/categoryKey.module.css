@@ -2,12 +2,15 @@
 .categoryKey {
     display: flex;
     flex-direction: column;
-    /* margin: 200px 0px 100px 50px; */
+    margin-top: 50px;
+    padding: 200px 150px 150px 150px;
     border: 2px solid black;
+    position: fixed;
   }
   
   .categoryKey div {
     padding: 10px; /* spacing of the words within the div*/
+    
   }
   
   .active {

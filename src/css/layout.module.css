@@ -6,7 +6,7 @@
 }
 
 .centralContainer {
-  margin: 50px auto 100px auto; /*top right bottom left*/
+  margin: 50px 350px 100px auto; /*top right bottom left*/
   max-width: 650px;
   border: 2px solid black;
 }
