@@ -6,12 +6,9 @@ import {
   navLinks,
   navLinkItem,
   navLinkText,
-  navKey,
-  navRight
 } from '../css/navigation.module.css';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const Navigation = () => {
   return (
@@ -39,13 +36,6 @@ const Navigation = () => {
           </a>
         </li>
         </ul>
-        <div className={navRight}>
-              <StaticImage
-                alt="Colour-coded key to blog post themes"
-                src="../images/graph_key.svg"
-                className={navKey}
-              />
-        </div>
     </nav>
   )
 }
