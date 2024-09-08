@@ -1,7 +1,7 @@
 // Nodes data
 export const nodes = [
     { id: 1, name: "The Ultimate Abstraction", url: "/mondrian", category: "art" },
-    { id: 2, name: "CompSci", url: "", category: "compsci" },
+    { id: 2, name: "Technology", url: "", category: "compsci" },
     { id: 3, name: "Maths", url: "", category: "maths" },
     { id: 4, name: "Nature", url: "", category: "nature"},
     { id: 5, name: "Other", url: "", category: "other" },

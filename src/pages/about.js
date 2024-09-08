@@ -6,7 +6,7 @@ const AboutPage = () => {
     <Layout pageTitle="About Graph Blog">
       <p>
         Hello and welcome to my 'graph blog', a place where I write about things I find interesting, 
-        primarily from the worlds of <b style={{color: '#1f77b4'}}>computer science</b>, <b style={{color: '#e377c2'}}>mathematics</b>, 
+        primarily from the worlds of <b style={{color: '#1f77b4'}}>technology</b>, <b style={{color: '#e377c2'}}>mathematics</b>, 
         and <b style={{color: '#d62728'}}>art</b>.
         The blog also serves as a personal playground where I can get creative with coding and overengineer things for fun!
       </p>
