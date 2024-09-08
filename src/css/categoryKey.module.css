@@ -1,0 +1,21 @@
+/* src/css/categoryKey.module.css */
+.categoryKey {
+    display: flex;
+    flex-direction: column;
+    /* margin: 200px 0px 100px 50px; */
+    border: 2px solid black;
+  }
+  
+  .categoryKey div {
+    padding: 10px; /* spacing of the words within the div*/
+  }
+  
+  .active {
+    color: black; /* Change to the color you want for the active category */
+    font-weight: bold;
+  }
+  
+  .inactive {
+    color: #666;
+  }
+  

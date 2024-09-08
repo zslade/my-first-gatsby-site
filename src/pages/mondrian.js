@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const MondrianPage = () => {
   return (
-    <Layout pageTitle="The Ultimate Abstraction">
+    <Layout pageTitle="The Ultimate Abstraction" currentCategory="Art">
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="author" content="Zoe Slade" />
